@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-col: #B0B08C;
+    --bg-color: #E8D9C4;
+    --text-color: rgb(228, 215, 193);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.main {
+    height: 45vw;
+    background: url(https://images.unsplash.com/photo-1621801306185-8c0ccf9c8eb8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(30%);
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.shlok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    margin: 10px;
+}
+
+.shlok h3 {
+    font-size: 2pc;
+    font-family: "Tiro Devanagari Hindi", serif;
+    color: white;
+    font-weight: 400;
+    -webkit-text-stroke: 2px rgba(240, 192, 60, 0.164);
+}
+
+.logo {
+
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.featured-wed {
+    margin-top: 10vw;
+    width: 45vw;
+    height: 40vh;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    bottom: 0;
+    padding: 25px;
+}
+
+.featured-wed h4 {
+    font-size: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.featured-wed h1 {
+    margin-top: 20px;
+    font-size: 3.5pc;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-color);
+
+}
+
+.main2 {
+    position: relative;
+
+    width: 100vw;
+    height: auto;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+}
+
+.image1 {
+    width: 18vw;
+    max-width: 400px; /* Added max-width for responsiveness */
+    height: auto; /* Set height to auto */
+    display: flex;
+    align-items: center;
+}
+
+.image1 img {
+    border: 5px solid #9BA7AA;
+    width: 100%; /* Ensure image takes full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.weds {
+    width: 40vw;
+    height: auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.content h1{
+    font-family: "Rakkas", serif;
+    color: #8a4a76;
+    font-size: 3pc ;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px ;
+    text-decoration: underline;
+}
+
+.content p {
+    margin-top: 5%;
+    font-size: 1.5pc;
+}
+
+.content p span {
+    color: #c92727 ;  
+    font-size: 32px ;
+}
+.image2{
+    width: 30vw;
+    max-width: 600px; /* Added max-width for responsiveness */
+    height: auto; /* Set height to auto */
+    
+}
+
+.image2 img {
+    border: 5px solid #80436D;
+    width: 100%; /* Ensure image takes full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.main3{
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+    background-color: var(--bg-color);
+    height: auto;
+}
+
+.content2{
+    margin-left: 5% ;
+    display: flex; 
+    flex-direction: column;
+}
+
+.content2 i{
+    margin-top: 5%;
+    font-size: 6pc   ;
+}
+.content2 p{
+    font-size: 2pc ;
+}
+.social {
+    width: 50vw ;
+    margin-top: 5%;
+    display: flex;
+}
+.social ul li {
+   list-style: none ;
+   margin: 10px ;   
+}
+.social a {
+    text-decoration: none ;
+}
+.social i{
+    margin-top: 20% ;
+    font-size: 2pc;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        height: auto;
+    }
+
+    .main2, .main3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image1, .image2 {
+        width: 80vw;
+        max-width: 300px;
+    }
+
+    .shlok h3{
+        font-size: 25px ;
+    }
+
+    .featured-wed h4 {
+        font-size: 15px;
+    }
+    .featured-wed h1 {
+        font-size: 25px;
+    }
+    .weds {
+        width: 100vw;
+    }
+    .content {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px ;
+
+    }
+    .content h1{
+        font-size: 25px ;
+    }
+    .content p {
+        font-size: 90%;
+    }
+    .content p span {
+        font-size: 20px ;
+    }
+
+    .imagediv img {
+        width: 80vw ;
+        height: 60vh;
+    }
+
+    .content2 p {
+        font-size: 20px ;
+    }
+
+    .content2 i {
+        font-size: small;
+    }
+
+}
