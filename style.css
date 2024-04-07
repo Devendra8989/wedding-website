@@ -10,6 +10,24 @@
     --text-color: rgb(228, 215, 193);
 }
 
+body{
+width: 100%;
+background: linear-gradient(45deg, #d2001a, #7462ff,rgb(241, 81, 241), #23d5ab,  #a721f4 ) ;
+background-size: 300% 300%;
+animation: color 3s ease-in-out infinite;
+}
+@keyframes color{
+    0% {
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -19,10 +37,11 @@
 
 .main {
     height: 45vw;
-    background: url(https://images.unsplash.com/photo-1621801306185-8c0ccf9c8eb8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background: url(https://img.freepik.com/free-vector/gradient-luxury-background_23-2149044196.jpg?w=1380&t=st=1712143109~exp=1712143709~hmac=0823577485c8454f5227a5c51cc2deae7ec5e0792b52c2331667d8b29b100d87);
     background-repeat: no-repeat;
     backdrop-filter: brightness(30%);
     background-position: center;
+    background-size: cover; */
 
     display: flex;
     flex-direction: column;
@@ -90,10 +109,9 @@
 
 .main2 {
     position: relative;
-
     width: 100vw;
     height: auto;
-    background-color: rgb(241, 241, 241);
+    background-color:#141325;
     display: flex;
     align-items: center;
     padding: 2vw;
@@ -125,7 +143,7 @@
 
 .content h1{
     font-family: "Rakkas", serif;
-    color: #8a4a76;
+    color: var(--text-color);
     font-size: 3pc ;
     font-weight: 700;
     font-style: normal;
@@ -136,11 +154,12 @@
 
 .content p {
     margin-top: 5%;
+    color: var(--text-color);
     font-size: 1.5pc;
 }
 
 .content p span {
-    color: #c92727 ;  
+    color: #f7a7a7 ;  
     font-size: 32px ;
 }
 .image2{
@@ -151,16 +170,17 @@
 }
 
 .image2 img {
-    border: 5px solid #80436D;
+    border: 2.5px solid #80436D;
     width: 100%; /* Ensure image takes full width */
     height: auto; /* Maintain aspect ratio */
 }
+
 
 .main3{
     display: flex;
     justify-content: space-between;
     padding: 10%;
-    background-color: var(--bg-color);
+    background-color: #d954af3d;
     height: auto;
 }
 
@@ -196,7 +216,7 @@
 
 @media screen and (max-width: 768px) {
     .main {
-        height: auto;
+        height: 75vh ;
     }
 
     .main2, .main3 {
@@ -214,10 +234,10 @@
     }
 
     .featured-wed h4 {
-        font-size: 15px;
+        font-size: 1.1rem;
     }
     .featured-wed h1 {
-        font-size: 25px;
+        font-size: 2rem ;
     }
     .weds {
         width: 100vw;
